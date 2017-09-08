@@ -1,0 +1,12 @@
+<view class="h2">设置考勤制度</view>
+<radio-group class="column" bindchange="radioChange">
+  <view class="radioItem" wx:for="{{rules}}" wx:key="item">
+  	<label class="" for="">
+  		<radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+  	</label>
+  </view>
+</radio-group>
+
+<view class="bottom">
+	<button class="btn" type="primary" size="default" hover-class="" bindtap="next">下一步</button>
+</view>

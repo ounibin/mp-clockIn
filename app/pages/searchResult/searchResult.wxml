@@ -1,0 +1,14 @@
+
+<view style="margin-top: 100rpx;"></view>
+
+<view class="logo">
+	<image src="{{ logoUrl }}" mode="scaleToFill" binderror="" bindload=""></image>
+</view>
+<view class="h1">{{ companyName }}</view>
+
+
+<view class="bottom">
+	<button class="btn" type="primary" size="default" bindtap="joinCompany" hover-class="">加入</button>
+	<button class="btn" type="default" size="default" bindtap="toAdmin" hover-class="">我是管理员</button>
+</view>
+

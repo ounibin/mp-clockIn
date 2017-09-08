@@ -1,0 +1,24 @@
+<view class="h2">按小时数签到</view>
+<text class='state'>请勾选所需报表内容</text>
+<checkbox-group class="column checkbox_group" bindchange="saveOptions">
+    <label class="checkbox_item" wx:for="{{options}}" wx:key="item">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+    </label>
+</checkbox-group>
+
+
+<text class='state'>请输入邮箱，然后点击“添加邮箱”按钮</text>
+<view class="row">
+	<input class="email-input" value="{{email_value}}" type="text" placeholder="请输入接收报表的邮箱" bindinput="" bindfocus="" bindblur="setEmail"/>
+	<button class="addBtn" type="default" size="default" hover-class="" bindtap="addEmail" disabled="{{false}}">添加邮箱</button>
+</view>
+
+
+<view class="column">
+	<view wx:for="{{emailList}}" wx:key="item">{{index+1}}.{{item}} <icon type="cancel" size="23" color="" data-icon-index="{{index}}" bindtap="delEnmail"/></view>
+</view>
+
+
+<view class="bottom">
+	<button class="btn" type="primary" size="default" hover-class="" bindtap="finish" disabled="{{false}}">提交</button>
+</view>

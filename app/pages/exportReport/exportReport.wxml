@@ -1,0 +1,18 @@
+<view class="logo">
+	<image src="{{logoUrl}}" mode="aspectFill"></image>
+	<text>{{companyName}}</text>
+</view>
+
+<!-- <view>企业名称：{{companyName}}</view> -->
+<view>导出报表到邮箱</view>
+<block wx:for="{{emailArr}}" wx:key="item">
+	<view>
+		<text>{{item}}</text>		
+		<!-- <button type="default" size="mini" hover-class="" data-emailbtnid="{{index}}" bindtap="delEmail">删除</button> -->
+		<icon type="cancel" size="23" color="" data-emailbtnid="{{index}}" bindtap="delEmail"/>	
+	</view>
+</block>
+
+<input type="text" value="{{emailInputVal}}" placeholder="请输入邮箱" maxlength="140" bindinput="" bindfocus="" bindblur="emailBlur"/>
+<button type="default" size="mini" hover-class="" bindtap="addEmail">添加邮箱</button>
+<button type="primary" size="default" hover-class="" bindtap="next">下一步</button>

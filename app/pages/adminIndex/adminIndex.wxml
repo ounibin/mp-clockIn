@@ -1,0 +1,10 @@
+<view class="h1">{{companyName}}</view>
+
+
+<view class="column">
+	<button type="default" size="default" hover-class="" bindtap="setAddressAndRules">设置地址和考勤制度</button>
+	<button type="default" size="default" hover-class="" bindtap="exportReport">导出报表</button>
+	<button type="default" size="default" hover-class="" bindtap="setDepartment">设置组织架构</button>
+</view>
+
+

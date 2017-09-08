@@ -1,0 +1,15 @@
+<view class="h1">{{companyName}}</view>
+<view class="h3">{{timeString}}</view>
+<view class="h3">{{day}}</view>
+<view class="h4">{{location_address_name}}</view>
+<view class="center">
+	<button class="btn" type="primary" size="mini" hover-class="" bindtap="onDuty">上班</button>
+	<button class="btn" type="primary" size="mini" hover-class="" bindtap="offDuty">下班</button>
+</view>
+<view class="state">如有需要，请在下面添加备注：</view>
+
+<input class="remark" type="text" placeholder="请输入备注" bindinput="" bindfocus="" bindblur="remarkBlur"/>
+
+<view class="bottom">
+	<button type="default" size="default" hover-class="" bindtap="toAdmin">我是管理员</button>
+</view>

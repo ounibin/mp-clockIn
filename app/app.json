@@ -1,0 +1,35 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/chooseStartAndEnd/chooseStartAndEnd",
+        "pages/exportReport/exportReport",
+        "pages/adminIndex/adminIndex",
+        
+
+
+        "pages/hourExportRule/hourExportRule",
+        "pages/setCompanyAddress/setCompanyAddress",
+        "pages/registerCompany/registerCompany",
+        "pages/setCompanyRules/setCompanyRules",
+        "pages/searchResult/searchResult",
+        "pages/search/search",
+        "pages/forWeekday/forWeekday",
+        "pages/forHour/forHour",
+        "pages/record/record",
+        
+        "pages/setDepartmentIndex/setDepartmentIndex",
+        
+        "pages/askForLeave/askForLeave",
+        "pages/editEmployeeInfo/editEmployeeInfo"
+
+
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#000000",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "定位打卡小程序",
+        "backgroundColor": "#ffffff",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    }
+}

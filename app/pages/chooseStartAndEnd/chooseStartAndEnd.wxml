@@ -1,0 +1,29 @@
+<view class="logo">
+	<image src="{{logoUrl}}" mode="aspectFill"></image>
+	<text>{{companyName}}</text>
+</view>
+
+
+<view>导出报表</view>
+<!-- 选择开始日期 -->
+<view>
+	<icon type="waiting"/>
+	<text>选择开始日期</text>
+</view>
+<picker mode="date" value="{{startDate}}" start="2017-01-01" end="" fields="day" bindchange="chooseStartDate">
+	<view class="">
+	    当前选择：{{startDate}}
+	</view>
+</picker>
+<!-- 选择结束日期 -->
+<view>
+	<icon type="waiting"/>
+	<text>选择结束日期</text>
+</view>
+<picker mode="date" value="{{endDate}}" start="2017-01-01" end="" fields="day" bindchange="chooseEndDate">
+	<view class="">
+	    当前选择：{{endDate}}
+	</view>
+</picker>
+
+<button type="primary" size="default" hover-class="" bindtap="sendExcelToEmail">确认并发送到邮箱</button>

@@ -1,0 +1,19 @@
+<view class="h2">按小时数签到</view>
+<radio-group class="column" bindchange="radioChange">
+    <view class="radioItem">
+        <radio value="day" checked="{{false}}"/>按天累计
+        <view>每天至少工作：<input value="{{hoursForDay}}" class="short_input" type="number" placeholder="请输入数值" maxlength="3" disabled="{{day_checked}}" bindinput="setHourForDay" bindfocus="" bindblur=""/>小时</view>
+    </view>
+    <view class="radioItem">
+        <radio value="week" checked="{{true}}"/>按周累计
+        <view>每周至少工作：<input value="{{hoursForWeek}}" class="short_input" type="number" placeholder="请输入数值" maxlength="3" disabled="{{week_checked}}" bindinput="setHourForWeek" bindfocus="" bindblur=""/>小时</view>
+    </view>
+    <view class="radioItem">
+        <radio value="month" checked="{{false}}"/>按月累计
+        <view>每月至少工作：<input value="{{hoursForMonth}}" class="short_input" type="number" placeholder="请输入数值" maxlength="3" disabled="{{month_checked}}" bindinput="setHourForMonth" bindfocus="" bindblur=""/>小时</view>
+    </view>
+</radio-group>
+
+<view class="bottom">
+	<button class="btn" type="primary" size="default" hover-class="" bindtap="next">下一步</button>
+</view>

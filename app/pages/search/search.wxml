@@ -1,0 +1,25 @@
+<view class="h2">
+    欢迎使用打卡小程序
+</view>
+<view class="" style="height: 200rpx"></view>
+
+<view class="state">
+    如已注册公司，请输入公司名称进行搜索
+</view>
+<view class="cell">
+    <!-- <icon class="cell-icon" type="search" size="23" color=""/> -->
+    <input class="cell-input" type="text" placeholder="请输入公司名称" focus bindinput="listenCompanyInput" bindfocus="" bindblur=""/>
+    <view class="">
+        <button type="primary" hover-class="" disabled="{{false}}" bindtap="searchCompany">搜索</button>
+    </view>
+
+</view>
+
+<view class="bottom">
+    <view class="state">
+        如还没有注册公司，请先注册
+    </view>
+    <button bindtap="signUp" class="btn" hover-class="" size="default" type="primary">
+        去注册
+    </button>
+</view>

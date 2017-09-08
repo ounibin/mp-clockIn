@@ -1,0 +1,15 @@
+<view>企业名称：{{companyName}}</view>
+<view>首页</view>
+<block wx:for="{{department}}" wx:key="item">
+	<view>
+		<!-- 部门 -->
+		<view data-department-idx="{{index}}" bindtap="showDepartment" bindlongtap="modifyDepartment">{{item.name}}</view>
+		<!-- 部门下面的员工 -->
+		<view class="{{item.show ? 'show' : 'hide'}}">
+			<view wx:for="{{item.employees}}" wx:key="item" data-employee-idx="{{index}}" bindlongtap="handleEmployee">{{item}}</view>
+		</view>
+		
+	</view>
+</block>
+
+<button type="default" size="mini" hover-class="" bindtap="addDepartment">添加部门</button>

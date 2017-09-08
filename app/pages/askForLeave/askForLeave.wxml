@@ -1,0 +1,17 @@
+<view class="h2">{{companyName}}</view>
+<view>系统检测到您不在公司地址范围内，请填写请假事由或至公司地址范围内再签到</view>
+<view>当前位置:{{location_address_name}}</view>
+
+<view>请在下面选择请假类别：</view>
+<picker mode="selector" bindchange="leavePickerChange" range="{{pickerArr}}" value="{{pickerIndex}}">
+	<view class="">
+	    *当前选择：{{pickerArr[pickerIndex]}}
+	</view>
+</picker>
+
+<textarea value="" placeholder="请输入请假缘由" maxlength="140" auto-height bindfocus="" bindblur="" bindlinechange=""/>
+
+<view class="bottom">
+	<button type="primary" size="default" hover-class="" bindtap="submitLeave">提交</button>
+	<button type="default" size="default" hover-class="" bindtap="">我是管理员</button>
+</view>

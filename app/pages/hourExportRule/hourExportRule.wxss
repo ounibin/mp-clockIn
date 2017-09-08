@@ -1,0 +1,34 @@
+
+
+.row{
+	position: relative;
+	width: 100%;
+	/*padding: 20rpx;*/
+	height: 100rpx;	
+	background-color: #FFF;
+}
+
+.email-input{
+	position: absolute;
+	left: 0;
+	height: 100rpx;
+	background-color: #FFF;
+	/*padding: 20rpx;*/
+}
+.addBtn{
+	position: absolute;
+	right: 0;
+	height: 100rpx;
+}
+
+.checkbox_group{
+	padding: 25rpx;
+}
+
+.inline_block{
+	display: inline-block;
+}
+
+.checkbox_item{
+	margin: 25rpx 0;
+}

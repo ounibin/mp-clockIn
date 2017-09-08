@@ -1,0 +1,12 @@
+
+<view class="h2">{{companyName}}</view>
+
+<view>姓名：</view>
+<input class="input" type="text" placeholder="请输入姓名" maxlength="140" bindinput="setName" bindfocus="" bindblur=""/>
+<view>手机号码：</view>
+<input class="input" type="number" placeholder="请输入手机号码" maxlength="140" bindinput="setPhoneNumber" bindfocus="" bindblur=""/>
+
+<view class="bottom">
+	<button type="primary" size="default" hover-class="" bindtap="submitEmployeeInfo">提交</button>
+</view>
+

@@ -1,0 +1,21 @@
+<view class="h2">设置公司地址</view>
+
+<button class="btn" size="default" hover-class="" bindtap="addCompanyAddress">添加地址</button>
+
+
+<view class="address-list">
+  <!-- wx:for 在组件上使用wx:for控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件 -->
+  <!-- wx:for 渲染一个包含多节点的结构块 -->
+  <!-- wx:for-item 可以指定数组当前元素的变量名 -->
+  <block wx:for="{{addressList}}" wx:key="item">
+  	<view class="addressa-item">
+  		<text>{{index + 1}}. {{item.name}}</text>
+  		<icon type="cancel" size="23" color="" data-icon-index="{{index}}" bindtap="delAddress"/>	
+  	</view>
+    
+  </block>
+</view>
+
+<view class="bottom">
+	<button class="btn" type="primary" size="default" hover-class="" bindtap="next" disabled="{{next_disabled}}">下一步</button>
+</view>

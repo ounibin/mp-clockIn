@@ -1,0 +1,7 @@
+.radioItem{
+	margin: 50rpx;
+}
+.short_input{
+	display: inline-block;
+	width: 200rpx;
+}

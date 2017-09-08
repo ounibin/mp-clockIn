@@ -1,0 +1,24 @@
+<view class="h1">建设中...</view>
+<view class="calendar__wrp">
+  <view class="calendar__navbar">
+    <view class="calendar__arrow" data-type="0" bindtap="switchMonth">{{"<"}}</view>
+    <view class="calendar__date">{{date}}</view>
+    <view class="calendar__arrow" data-type="1" bindtap="switchMonth">{{">"}}</view>
+  </view>
+  <view class="calendar__head">
+    <view wx:for="{{week}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="calendar__body">
+    <view class="calendar__rows" wx:for="123456" wx:for-index="row">
+      <view class="calendar__cols" wx:for="1234567" wx:for-index="col">
+        <view class="{{(col==0||col==6)?'calendar_restday':'calendar_workday'}} {{dayBackground}}" data-class="{{(col==0||col==6)?'calendar_restday':'calendar_workday'}}" bindtap="clickItem" data-day="{{row * 7 - monthStart + col >-1 && row * 7 - monthStart + col < day ? row * 7 + col - monthStart + 1 : ''}}">
+          {{
+            row * 7 - monthStart + col >-1 && row * 7 - monthStart + col < day ? row * 7 + col - monthStart + 1 : ''
+          }} {{RestFlag}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
